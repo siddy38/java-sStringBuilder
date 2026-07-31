@@ -1,0 +1,264 @@
+//Q.36.Delete all spaces.Input - I LOVE JAVA OutPut _ ILOVEJAVA..
+                // public class sstringBuilderss {
+                //         public static void main(String[] args) {
+                //   StringBuilder sb = new StringBuilder("I LOVE JAVA");
+                //   sb.deleteCharAt(1);
+                //   sb.deleteCharAt(5);
+                //   System.out.println(sb);
+
+                //         }
+
+                // }
+                                //Q.37.Delete every second character.Input - ABCDEFGH Output ACEG.
+                //        public class sstringBuilderss {
+                //          public static void main(String[] args) {
+                //    StringBuilder sb = new StringBuilder("ABCDEFGH");
+                //    for(int i =sb.length()-1; i>0; i--){
+                //         if(i % 2== 1){
+                //                sb.deleteCharAt(i);
+                //         }
+
+                //    }
+                //    System.out.println(sb);
+                //          }
+                //         }
+                //         //is question ko normal (sb.deletecharAt()) se v kr sakte the but maine loop se kia 
+
+
+                                //Q.38.Delete every second character.Input ABCDEFGH Output: ACEG.
+
+
+                //   public class sstringBuilderss {
+                //           public static void main(String[] args) {
+                //     StringBuilder sb = new StringBuilder("ABCDEFGH");
+                //           for(int i = 0; i<sb.length(); i++){
+                //                 if(sb.charAt(i) % 2 ==0){
+                //                         sb.deleteCharAt(i);
+
+                //                 }
+                //           }
+                //           System.out.println(sb);
+                //           }
+                //         }
+
+                                 //🔴 Level 6: reverse()
+                         //Q.39.Take user input and reverse it.
+                // import java.util.*;
+                
+                //   public class sstringBuilderss {
+                //           public static void main(String[] args) {
+                                
+                //                 Scanner sc = new Scanner (System.in);
+                //                 String name = sc.nextLine();
+                //                 StringBuilder sb = new StringBuilder(name);
+                //                 sb.reverse();
+                                
+                //                 System.out.println(sb);
+                        
+
+                                
+                //           }
+                //         }
+                                //Q.40.Check if a string is a palindrome using reverse().
+//                               public class sstringBuilderss {
+//                         public static void main(String[] args) {
+//                                 String name = "madam"
+// ;                                StringBuilder sb = new StringBuilder("madam");
+//                                 sb.reverse();
+//                                 if(name.equals(sb.toString())){
+//                                         System.out.println("Palondrom");
+//                                 }else{
+//                                         System.out.println("Not Palindrom");
+//                                 }
+
+//                                 }
+
+//                               }
+                                        //same question but without using reverse.
+                //   public class sstringBuilderss {
+                //          public static void main(String[] args) {
+                //                 String str1 = "madam";
+                //                 String str2 = "madam";
+                                
+                //                 if(str1 == str2){
+                //                         System.out.println("Palindrom");
+                //                 }else{
+                //                         System.out.println("NO=ot Palindrom");
+                //                 }
+                //                 }
+                //          }
+                      //Q.41.Reverse every word separately.imput : I Love Java output : I evoL avaJ.
+               
+                        //        public class sstringBuilderss {
+                        //  public static void main(String[] args) {
+                        //         StringBuilder sb = new StringBuilder("I LOVE JAVA");
+                        //         sb.setCharAt(0, 'I');
+                        //         sb.replace(2, 6, "EVOL");
+                        //         sb.replace(7, 11, "AVAJ");
+                                
+                        //         System.out.println(sb);
+                                
+                        //  }
+                        // }
+                                        //Q.42.Reverse only the first half of a string.
+
+                        //  public class sstringBuilderss {
+                        //         public static void main(String[] args) {
+                        //             StringBuilder sb = new StringBuilder("SiddharthKumar");
+                        //               sb.reverse();
+                                      
+                        //             System.out.println(sb.length());
+                        //             for(int i =7; i<=13; i++ ){
+                                      
+                        //                 System.out.print(sb.charAt(i));
+                                       
+                        //         }
+                        //  }
+                        // }
+                                //⭐ Level 7: Intermediate Logic (46–50)
+                                        //Q.43.Count vowels.
+                //         public class sstringBuilderss {
+                //                 public static void main(String[] args) {
+                //                     StringBuilder sb = new StringBuilder("Siddharth Kumar , Sameer Kumar, Manash Kumar, Sagar Kumar");
+                //                     int count =0;
+                //                     for(int i =0; i<sb.length(); i++){
+                //                          char ch = sb.charAt(i);
+
+                                    
+                //                     if(ch == 'a' || ch == 'e'|| ch == 'i'|| ch == 'o'|| ch == 'u'){
+                //                         sb.setCharAt(i, ch);
+                //                         count++;
+                //                     }
+                //                 }
+                //                 System.out.println(count);
+                //         }
+                        
+                // }        
+                                //Q.44.Count uppercase and lowercase letters separately.
+                //  public class sstringBuilderss {
+                //                 public static void main(String[] args) {
+                //                     StringBuilder sb = new StringBuilder("SiddHarth KuMAr");
+                                
+                //                     int uppercase = 0;
+                //                     int lowercase =0;
+
+                //                     for(int i =0; i<sb.length(); i++){
+                //                       char ch =  sb.charAt(i);
+                //                         if(ch >= 'A' && ch <='Z'){
+                //                                 uppercase++;
+                //                         }else if(ch >= 'a' && ch <= 'z'){
+                //                                 lowercase++;
+                //                         }
+
+
+                //                     }
+                //                     System.out.println("Upperlatter : " +uppercase + " " + "lowerletter : " +lowercase);
+                //                 }
+                //         }
+                         //Q.45.Count how many times 'a' appears. Input - banana Output - 3.
+                        //  public class sstringBuilderss {
+                        //         public static void main(String[] args) {
+                        //             StringBuilder sb = new StringBuilder("banana");
+
+                        //             int count =0;
+
+                        //             for(int i=0; i<sb.length(); i++){
+
+                        //                 char ch = sb.charAt(i);
+                                        
+                                       
+
+                        //                 if(ch == 'a'){
+
+                        //                 count ++;
+                                  
+                        //         }  
+                        //   }
+                        //   System.out.println(count);
+                        //  }
+                        // }
+                        // //Q.46.Remove duplicate characters. Input - programming Output - progamin.
+                        // public class sstringBuilderss {
+                        //         public static void main(String[] args) {
+                        //             StringBuilder sb = new StringBuilder("programming");
+                        //             //first way to solve.
+                        //         System.out.println(sb.length());
+                        //          sb.deleteCharAt(7);
+                        //          sb.deleteCharAt(9);
+                        //          sb.deleteCharAt(4);
+                                
+                                
+                        //         System.out.println(sb);
+                        //         }
+                        // }
+                        
+                       
+                //second way to solve.
+                // for(int i = 0; i < sb.length(); i++){
+                // char ch = sb.charAt(i);
+                // for(int j =i+1; j<sb.length(); j++){
+                // if(ch == sb.charAt(j)){
+                // sb.deleteCharAt(j);
+                // j--;
+                // }
+                // }
+                // }       
+
+                // System.out.println(sb);
+                //                 }
+                //         } 
+                                //MINI PROJECT.
+                                //Print:
+
+                        // Original : Programming
+                        // Length : 11
+                        // Reverse : gnimmargorP
+                        // First Character : P
+                        // Last Character : g
+                        // Vowels : 3
+                        // Uppercase : PROGRAMMING
+                        // Lowercase : programming
+                        // Without Vowels : Prgrmmng
+                        // public class sstringBuilderss {
+                        //         public static void main(String[] args) {
+                        //             StringBuilder sb = new StringBuilder("Programming");
+                                    
+                                  
+                                                 //Q1.
+                                // //     System.out.println(sb);
+                                                //Q2.
+                                // //     System.out.println(sb.length());
+                                                //Q3.
+                                // //     System.out.println(sb.reverse());
+                                                //Q4.
+                                // //     sb.delete(1, 11);
+                                // //     System.out.println(sb);
+                                                //Q5.
+                                // //     sb.delete(0, 10);
+                                // //     System.out.println(sb);
+                                                //Q6.
+                                //     int count =0;
+                                // for(int i=0; i<sb.length(); i++){
+                                //         char ch = sb.charAt(i); 
+                                //         if(ch == 'a'||ch =='e'||ch == 'i'||ch == 'o'||ch =='u'){                                             
+                                //                count++;
+                                //         }                                       
+                                // }
+                                // System.out.println(count);
+                                                //Q7.
+                                        // String str = "programme";
+                                        
+                                        // //System.out.println(str.toUpperCase());
+                                        //                 //Q8.
+                                        // System.out.println(str.toLowerCase());
+                                                //Q9.
+                        //                 for(int i=0; i<sb.length(); i++){
+                        //                         char ch = sb.charAt(i);
+                        //                 if(ch == 'a'|| ch=='e'||ch == 'i'||ch == 'o'||ch == 'u'){
+                        //                         sb.deleteCharAt(i);
+                        //                 }
+                        //                 }
+                        //                 System.out.println(sb);
+                        //         }
+                        // }
+                        
